@@ -1,8 +1,14 @@
 import java.lang.reflect.*;
 
    class class1 {
-      private int f1(
-       Object p, int x) throws NullPointerException
+      private int f1 (Object p, int x) throws NullPointerException
+      {
+         if (p == null)
+            throw new NullPointerException();
+         return x;
+      }
+
+      public String f2 (Object p, String x) throws NullPointerException
       {
          if (p == null)
             throw new NullPointerException();
