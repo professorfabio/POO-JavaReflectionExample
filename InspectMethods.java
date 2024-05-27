@@ -20,20 +20,15 @@ import java.lang.reflect.*;
             for (int i = 0; i < methlist.length;
                i++) {  
                Method m = methlist[i];
-               System.out.println("name 
-                 = " + m.getName());
-               System.out.println("decl class = " +
-                              m.getDeclaringClass());
+               System.out.println("name = " + m.getName());
+               System.out.println("decl class = " + m.getDeclaringClass());
                Class pvec[] = m.getParameterTypes();
                for (int j = 0; j < pvec.length; j++)
-                  System.out.println("
-                   param #" + j + " " + pvec[j]);
+                  System.out.println("param #" + j + " " + pvec[j]);
                Class evec[] = m.getExceptionTypes();
                for (int j = 0; j < evec.length; j++)
-                  System.out.println("exc #" + j 
-                    + " " + evec[j]);
-               System.out.println("return type = " +
-                                  m.getReturnType());
+                  System.out.println("exc #" + j + " " + evec[j]);
+               System.out.println("return type = " +m.getReturnType());
                System.out.println("-----");
             }
          }
